@@ -1,6 +1,10 @@
 version: "3.4"
 
 services:
+  cache:
+    image: redis
+    container_name: cache
+
   was:
     container_name: was
     build:
